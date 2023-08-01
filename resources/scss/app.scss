@@ -1,1 +1,221 @@
 @import '~bootstrap/scss/bootstrap';
+@import '/node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.back {
+    width: 100%;
+    height: 30px;
+    background-color: #0282F9;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+
+    .logo img {
+        width: 45px;
+    }
+
+    li {
+        margin: 0 10px;
+
+        &:hover {
+            color: #0282F9;
+            border-bottom: 3px solid #0282F9;
+            padding-bottom: 27px;
+        }
+    }
+
+    .size {
+        font-size: 12px;
+    }
+}
+
+.jumbotron {
+    width: 100%;
+    height: 300px;
+    background-image: url('../img/jumbotron.jpg');
+    background-size: cover;
+    position: relative;
+
+    div {
+        color: white;
+        width: 160px;
+        background-color: $blue;
+        text-align: center;
+        padding: 6px 0;
+        position: absolute;
+        bottom: -7%;
+        left: 16%;
+        transform: translate(-5%, -16%);
+    }
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+}
+
+.card-body p {
+    font-size: 15px;
+}
+
+.justify {
+    display: flex;
+    justify-content: center;
+
+    .button {
+        border: none;
+        padding: 10px 45px;
+        margin: 30px 0 15px;
+        color: white;
+        background-color: $blue;
+    }
+}
+
+.group {
+    background-color: #0282F9;
+    width: 100%;
+
+    ul {
+        margin: 0 auto;
+
+        li {
+            margin: 30px 5px 30px 0;
+
+            div {
+                margin-right: 2.5rem;
+
+                img {
+                    width: 35px;
+                    margin: 8px;
+                    vertical-align: middle;
+                }
+
+                #locator {
+                    width: 25px;
+                }
+
+                span {
+                    font-size: 10px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.dc-back {
+    width: 100%;
+    background-image: url('../img/footer-bg.jpg');
+
+    .pos-rel {
+        position: relative;
+
+        li,
+        p {
+            font-size: 12px;
+        }
+
+
+        .bg-comics img {
+            width: 450px;
+            position: absolute;
+            z-index: 1;
+            right: 8%;
+            top: 40%;
+            transform: translate(-8%, -40%);
+            object-fit: fill;
+
+        }
+    }
+}
+
+.social {
+    width: 100%;
+    background-color: #303030;
+    position: relative;
+    z-index: 3;
+
+
+
+    button {
+        background-color: transparent;
+        border: 1px solid #027DEF;
+        padding: 8px;
+        color: white;
+        margin: 32px 0;
+    }
+
+    span {
+        color: #027DEF;
+
+        img {
+            vertical-align: middle;
+            width: 22px;
+            margin: 0 5px;
+        }
+    }
+
+
+
+}
+
+
+.pos {
+    position: relative;
+
+    .current img {
+        width: 160px;
+        position: absolute;
+        left: 23%;
+        top: 100%;
+        transform: translate(-23%, -100%);
+    }
+}
+
+
+
+.bg-white h1 {
+    font-size: 25px;
+
+}
+
+.ma-left {
+    margin-left: 80px;
+}
+
+.space {
+    margin: 50px 0;
+}
+
+.back-green {
+    background-color: #55BA59;
+
+    .color {
+        color: #80DF82;
+    }
+}
+
+.center {
+    margin-left: 170px;
+}
+
+.back-grey {
+    background-color: #F6F6F6;
+    position: relative;
+    z-index: 3;
+
+}
+
+.bor-bot {
+    border-bottom: 1px solid grey;
+    width: 400px;
+}
