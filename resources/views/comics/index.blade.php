@@ -31,7 +31,7 @@
                             <td> {{ $comic->sale_date }} </td>
                             <td> {{ $comic->type }} </td>
                             <td>
-                                <a href="" class="btn btn-info btn-sm"><i class="fa-solid fa-circle-info"></i></a>
+                                <a href=" {{ route('comics.show', $comic->id) }} " class="btn btn-info btn-sm"><i class="fa-solid fa-circle-info"></i></a>
                             </td>
                         </tr>
                         @endforeach
