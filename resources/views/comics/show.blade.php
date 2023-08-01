@@ -14,7 +14,11 @@
     </div>
     <div class="row">
         <div class="col-6">
-            <img class="my-3" src="{{ $comic->thumb }}" alt="{{ $comic->thumb }}">
+            @if(!empty($comic->src))
+                <img class="my-3" src="{{ $comic->thumb }}" alt="{{ $comic->thumb }}">
+            @else
+                <h5>Img not Found!</h5>
+            @endif
         </div>
         <div class="col-6 mt-3">
             <p> <span class="fw-bold">Description:</span> {{ $comic->description }} </p>
