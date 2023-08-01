@@ -8,6 +8,11 @@
             </div>
         </div>
         <div class="row">
+            <div class="col-12 my-3">
+                <a href="{{ route('comics.create') }}" class="btn btn-primary btn-sm">Create your Comics</a>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-12">
                 <table class="table mb-5 z-3 position-relative">
                     <thead>
