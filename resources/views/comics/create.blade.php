@@ -9,7 +9,8 @@
                     <a href=" {{ route('comics.index')}} " class="btn btn-secondary btn-sm">Comics</a>
                 </div>
                 <div>
-                    <form action="" method="POST">
+                    <form action=" {{ route('comics.store') }} " method="POST">
+                        @csrf
                         <div class="class-group">
                             <label class="control-label">Title</label>
                             <input type="text" id="title" name="title" class="form-control" placeholder="Title">
