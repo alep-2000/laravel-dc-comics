@@ -52,7 +52,7 @@
                             <input type="text" id="writers" name="writers" class="form-control" placeholder="Writers">
                         </div>
                         <div class="class-group my-3">
-                            <button type="submit" class="btn btn-primary btn-success">Crea</button>
+                            <button type="submit" class="btn btn-primary btn-success">Create</button>
                         </div>
                     </form>
                 </div>
