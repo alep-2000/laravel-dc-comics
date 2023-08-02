@@ -20,7 +20,6 @@
                             <th>ID</th>
                             <th>TITLE</th>
                             <th>PRICE</th>
-                            <th>SERIES</th>
                             <th>SALE DATE</th>
                             <th>TYPE</th>
                             <th>ACTIONS</th>
@@ -32,12 +31,18 @@
                             <td> {{ $comic->id }} </td>
                             <td> {{ $comic->title }} </td>
                             <td> {{ $comic->price }} </td>
-                            <td> {{ $comic->series }} </td>
                             <td> {{ $comic->sale_date }} </td>
                             <td> {{ $comic->type }} </td>
                             <td>
                                 <a href=" {{ route('comics.show', $comic->id) }} " class="btn btn-info btn-sm"><i class="fa-solid fa-circle-info"></i></a>
                                 <a href=" {{ route('comics.edit', $comic->id) }} " class="btn btn-warning btn-sm"><i class="fa-solid fa-pen-to-square"></i></a>
+                                <form class="d-inline-block" action="{{ route('comics.destroy', $comic->id) }}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger btn-sm">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </form>
                             </td>
                         </tr>
                         @endforeach
