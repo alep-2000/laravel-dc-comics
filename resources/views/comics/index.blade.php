@@ -37,6 +37,7 @@
                             <td> {{ $comic->type }} </td>
                             <td>
                                 <a href=" {{ route('comics.show', $comic->id) }} " class="btn btn-info btn-sm"><i class="fa-solid fa-circle-info"></i></a>
+                                <a href=" {{ route('comics.edit', $comic->id) }} " class="btn btn-warning btn-sm"><i class="fa-solid fa-pen-to-square"></i></a>
                             </td>
                         </tr>
                         @endforeach
